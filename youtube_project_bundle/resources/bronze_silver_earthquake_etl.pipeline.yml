@@ -15,5 +15,7 @@ resources:
       photon: true
       channel: CURRENT
       catalog: ${var.catalog}
-      serverless: true
+      serverless: true 
+      run_as:
+        service_principal_name: ${var.spn_id}
       root_path: ../src/DLT_pipelines/Bronze_Silver_Earthquake
